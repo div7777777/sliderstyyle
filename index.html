@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: black;
+}
+/* slider */
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.slid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.thems{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 412px;
+    animation: 9s infinite thems;
+    background-color: rgba(20, 20, 20, 0.4);
+}
+@keyframes thems{
+    0%{
+        transform: translateX(-412px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(412px);
+    }
+}
+/* title */
+.items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+.items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 2px 2px 4em whitesmoke;
+    background-color: rgba(20, 20, 20, 0.4);
+    height: 600px;
+    width: 100%;
+}
+.them{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 412px;
+}
+.h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: whitesmoke;
+    animation: 2s infinite h1;
+}
+@keyframes h1{
+    50%{
+        text-shadow: 12px 12px red;
+    }
+}
+.p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: whitesmoke;
+    animation: 2s infinite p;
+}
+@keyframes p{
+    50%{
+        text-shadow: 12px 12px red;
+    }
+}
+
+    </style>
+    <div class="items">
+   <div class="item">
+     <h1 class="h1">ASTRONAUTE</h1>
+     <P class="p"> Hello Word</P>
+   </div>
+    </div>
+    <div class="slider">
+        <div class="slid">
+         <button class="thems"><img class="them" src="1.png.png" alt=""></button>
+        <button class="thems"><img class="them" src="2.png" alt=""></button>
+        <button class="thems"><img class="them" src="3.png.png" alt=""></button>
+        <button class="thems"><img class="them" src="4.png.png" alt=""></button>
+        <button class="thems"><img class="them" src="5.png.png" alt=""></button>
+        <button class="thems"><img class="them" src="6.png.png" alt=""></button>
+        <button class="thems"><img class="them" src="7.png.png" alt=""></button>
+        <button class="thems"><img class="them" src="8.png.png" alt=""></button>
+        <button class="thems"><img class="them" src="9.png.jpg" alt=""></button>
+        </div>
+    </div>
+ 
+
+
+</div>        
+
+     
+</body>
+</html>
